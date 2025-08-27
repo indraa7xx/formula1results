@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="header-left">
+                    
+                    
+                    <h1 class="title">Formula1 Results</h1>
+                </div>
+                <div class="last-updated" id="lastUpdated">
+                    Last updated: Loading...
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="container"> <!-- overall -->
+
+            
+            <section>
+                <h2>Current Grand Prix Results</h2>
+                <div class="card">
+                    <div id="currentRaceLoading" class="loading">
+                        <div class="loading-spinner"></div>
+                        <span>Loading current race results...</span>
+                    </div>
+                    <div id="currentRaceContent" class="hidden">
+                        <div class="card-header">
+                            <h3 id="raceTitle" class="race-title"></h3>
+                            <p id="raceDate" class="race-date"></p>
+                        </div>
+                        <div class="table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Position</th>
+                                        <th>Driver</th>
+                                        <th>Team</th>
+                                        <th>Time</th>
+                                        <th>Points</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="raceResultsTable">
+                                
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section>
+                <h2>Overall Driver Standings</h2>
+                <div class="card">
+                    <div id="driversLoading" class="loading">
+                        <div class="loading-spinner"></div>
+                        <span>Loading driver standings...</span>
+                    </div>
+                    <div id="driversContent" class="hidden">
+                        <div class="table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Position</th>
+                                        <th>Driver</th>
+                                        <th>Team</th>
+                                        <th>Points</th>
+                                        <th>Wins</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="driversTable">
+                                    <!-- Driver standings will be inserted here -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Constructor Standings -->
+            <section>
+                <h2>Overall Constructor Standings</h2>
+                <div class="card">
+                    <div id="constructorsLoading" class="loading">
+                        <div class="loading-spinner"></div>
+                        <span>Loading constructor standings...</span>
+                    </div>
+                    <div id="constructorsContent" class="hidden">
+                        <div class="table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Position</th>
+                                        <th>Constructor</th>
+                                        <th>Points</th>
+                                        <th>Wins</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="constructorsTable">
+                                    <!-- Constructor -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    
+    <footer>
+        <div class="container">
+            <p>Data provided by OpenF1 API • Built by @github: indraa7xx </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
